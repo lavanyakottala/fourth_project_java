@@ -3,6 +3,7 @@ package food.mcd;
 import food.mcd.drivethru.Car;
 import food.mcd.headset.Till;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +16,11 @@ public class MainCounter {
         customer.add("cheeseburger");
         customer.add(1);
         System.out.println("lady is in the index "+customer.indexOf("lady"));
-        System.out.println(customer.);
+        customer.set(1,"hamburger");
+        System.out.println("the burger after swapping with cheeseburger is "+customer.get(1));
+        for(int d=0;d<customer.size();d++){
+            System.out.println(customer.get(d));
+        }
         Till till = new Till();
 
 
